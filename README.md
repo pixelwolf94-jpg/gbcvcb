@@ -2712,7 +2712,7 @@ movementGroup:AddToggle("SpeedHack", {
 
 movementGroup:AddSlider("SpeedValue", {
     Text = "Walk Speed",
-    Default = 50,
+    Default = 35,
     Min = 16,
     Max = 200,
     Rounding = 0,
@@ -2879,9 +2879,9 @@ killAuraGroup:AddToggle("KillAuraExtendedRange", {
 
 killAuraGroup:AddSlider("KillAuraRange", {
     Text = "Base Range",
-    Default = 6,
+    Default = 200,
     Min = 1,
-    Max = 20,
+    Max = 999,
     Rounding = 0,
     Suffix = " studs",
     Tooltip = "Base attack distance. Extended Range adds +2 studs. Normal melee reach is ~5-7 studs.",
@@ -2889,8 +2889,8 @@ killAuraGroup:AddSlider("KillAuraRange", {
 
 killAuraGroup:AddSlider("KillAuraSwingRate", {
     Text = "Swing Delay",
-    Default = 0.5,
-    Min = 0.1,
+    Default = 0.05,
+    Min = 0.01,
     Max = 1.0,
     Rounding = 2,
     Suffix = " s",
@@ -3015,9 +3015,9 @@ autoPickupGroup:AddToggle("AutoPickup", {
 
 autoPickupGroup:AddSlider("AutoPickupRadius", {
     Text = "Radius",
-    Default = 20,
+    Default = 200,
     Min = 5,
-    Max = 35,
+    Max = 999,
     Rounding = 0,
     Suffix = " studs",
     Tooltip = "How far away items are picked up. Combine methods A+B+C for best coverage at range.",
